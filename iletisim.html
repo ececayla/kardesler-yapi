@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kardeşler Yapı Dekorasyon - İletişim</title>
+    <link rel="stylesheet" href="deneme.css">
+    <link rel="shortcut icon" href="img/buildings.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header id="ana-header">
+    <div class="top-bar">
+        <div class="contact-info">
+            <a href="https://wa.me/905318474932" target="_blank">
+                <i class="fab fa-whatsapp"></i> 05318474932
+            </a>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/kullaniciadi" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/kullaniciadi" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+
+    <h1>KARDEŞLER YAPI DEKORASYON</h1>
+    <div class="logo-container">
+        <img src="img/logoo.png" alt="Kardeşler Yapı Logo">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid justify-content-center flex-column">
+            
+            <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#kardeslerMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="kardeslerMenu">
+                <div class="d-flex flex-column align-items-center">
+                    
+                    <ul class="navbar-nav menu mb-3">
+                        <li class="nav-item menu-items"> <a href="index.html">Ana sayfa</a></li>
+                        <li class="nav-item menu-items"> <a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li class="nav-item menu-items"> <a href="yaptigimiz-isler.html">Yaptığımız İşler</a></li>
+                        <li class="nav-item menu-items"> <a href="iletisim.html">İletişim</a></li>
+                    </ul>
+
+                    <form class="arama-motoru" onsubmit="anaSayfaAra(); return false;" autocomplete="on">
+                        <input type="text" id="aramaInput" name="site-arama" placeholder="Ne aramıştınız?" onkeyup="anaSayfaAra()" autocomplete="on" />
+                        <button type="submit">Ara</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<aside id="iletisim-formu" class="container" style="margin-top: 50px; margin-bottom: 50px;">
+    <div class="row g-4 align-items-stretch">
+        
+        <div class="col-md-6">
+            <h2>Teklif ve İstek Formu</h2>
+            <div class="contact">
+                <form action="#">
+                    <fieldset class="zorunlu-alanlar">
+                        <label for="ad">Adınız</label>
+                        <input type="text" id="ad" name="ad" required />
+                        <label for="soyad">Soyadınız</label>
+                        <input type="text" id="soyad" name="soyad" required />
+                        <label for="telefon">Telefon Numaranız</label>
+                        <input type="tel" id="telefon" name="telefon" required />
+                    </fieldset>
+                    <input type="submit" value="Gönder">
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <h2>Bize Nasıl Ulaşabilirsiniz?</h2>
+            <div class="contact-details">
+                <p><i class="fas fa-map-marker-alt"></i> Adres: Arabayatağı, BURSA</p>
+                <p><i class="fas fa-phone"></i> Telefon: 0531 847 49 32</p>
+                <p><i class="fas fa-envelope"></i> E-posta: info@kardesleryapi.com</p>
+                <div class="map-container" style="margin-top: 20px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48896.79155053162!2d29.13532890656083!3d40.18853755498801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca382434a9ef4f%3A0x21c258d97607730e!2sArabayata%C4%薬%C4%B1%2C%20Y%C4%B1ld%C4%B1r%C4%B1m%2FBursa!5e0!3m2!1str!2str!4v1680000000000!5m2!1str!2str" 
+                            width="100%" height="250" style="border:0; border-radius:10px;" 
+                            allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+</aside> 
+
+<footer>
+    <p>
+        © 2026 Kardeşler Yapı Dekorasyon Web Sitesi | <a href="https://caylas.com.tr/" target="_blank">Çaylas Net Yazılım</a>
+    </p>
+</footer>
+ 
+<script src="bootstrap/bootstrap.js"></script>
+
+<script>
+function anaSayfaAra() {
+    let kelime = document.getElementById('aramaInput').value.trim();
+    if (kelime !== "") {
+        window.location.href = "yaptigimiz-isler.html?ara=" + encodeURIComponent(kelime);
+    }
+}
+</script>
+
+</body>
+</html>

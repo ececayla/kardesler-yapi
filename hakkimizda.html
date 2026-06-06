@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kardeşler Yapı Dekorasyon - Hakkımızda</title>
+    <link rel="stylesheet" href="deneme.css">
+    <link rel="shortcut icon" href="img/buildings.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header id="ana-header">
+    <div class="top-bar">
+        <div class="contact-info">
+            <a href="https://wa.me/905318474932" target="_blank">
+                <i class="fab fa-whatsapp"></i> 05318474932
+            </a>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/kullaniciadi" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/kullaniciadi" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+
+    <h1>KARDEŞLER YAPI DEKORASYON</h1>
+    <div class="logo-container">
+        <img src="img/logoo.png" alt="Kardeşler Yapı Logo">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid justify-content-center flex-column">
+            
+            <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#kardeslerMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="kardeslerMenu">
+                <div class="d-flex flex-column align-items-center">
+                    
+                    <ul class="navbar-nav menu mb-3">
+                        <li class="nav-item menu-items"> <a href="index.html">Ana sayfa</a></li>
+                        <li class="nav-item menu-items"> <a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li class="nav-item menu-items"> <a href="yaptigimiz-isler.html">Yaptığımız İşler</a></li>
+                        <li class="nav-item menu-items"> <a href="iletisim.html">İletişim</a></li>
+                    </ul>
+
+                    <form class="arama-motoru" onsubmit="anaSayfaAra(); return false;" autocomplete="on">
+                        <input type="text" id="aramaInput" name="site-arama" placeholder="Ne aramıştınız?" onkeyup="anaSayfaAra()" autocomplete="on" />
+                        <button type="submit">Ara</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<section class="misyon-vizyon py-5">
+    <div class="container">
+        <div class="row g-4">
+            
+            <div class="col-md-6">
+                <div class="mv-kart shadow-sm h-100 p-4">
+                    <div class="mv-ikon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Misyonumuz</h3>
+                    <p>
+                        2002'den bu yana kazandığımız ustalıkla; yaşam alanlarınıza estetik, konfor ve güven katmak. 
+                        Doğru malzeme, dürüst işçilikและ zamanında teslimat prensibiyle, hayallerinizdeki dekorasyonu 
+                        gerçeğe dönüştürmek için çalışıyoruz.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mv-kart shadow-sm h-100 p-4">
+                    <div class="mv-ikon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Vizyonumuz</h3>
+                    <p>
+                        Yenilikçi yapı teknolojilerini yakından takip ederek, bölgenin en güvenilir yapı dekorasyon markası olmak. 
+                        Gelecekte de kalite standartlarımızdan ödün vermeden, sürdürülebilir ve estetik projelerle 
+                        yaşam kalitenizi artıran öncü bir çözüm ortağı olarak kalmak.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="neden-bizi-tercih-etmelisiniz py-5">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: #2c3e50;">NEDEN BİZİ TERCİH ETMELİSİNİZ?</h2>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="tercih-kart">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h4>Uygun Fiyat Garantisi</h4>
+                    <p>Kaliteden ödün vermeden, bütçenizi koruyan şeffaf fiyat politikasıyla hizmet veriyoruz.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="tercih-kart">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Hızlı ve Pratik Çözümler</h4>
+                    <p>İşinizin aciliyetini biliyoruz; söz verdiğimiz sürede, temiz ve hızlı bir şekilde teslim ediyoruz.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="tercih-kart">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Güven ve Tecrübe</h4>
+                    <p>2002'den bu yana kazandığımız ustalıkla, her projenin arkasında ailemizin güvencesini taşıyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>
+        © 2026 Kardeşler Yapı Dekorasyon Web Sitesi | <a href="https://caylas.com.tr/" target="_blank">Çaylas Net Yazılım</a>
+    </p>
+</footer>
+
+<script src="bootstrap/bootstrap.js"></script>
+
+<script>
+function anaSayfaAra() {
+    let kelime = document.getElementById('aramaInput').value.trim();
+    if (kelime !== "") {
+        window.location.href = "yaptigimiz-isler.html?ara=" + encodeURIComponent(kelime);
+    }
+}
+</script>
+
+</body>
+</html>
